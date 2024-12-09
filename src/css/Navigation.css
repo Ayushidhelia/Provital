@@ -1,0 +1,214 @@
+/* General Navigation Styles */
+.nav-content {
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    color: #707070;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/* Navigation Options (Desktop) */
+.nav-option {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Links Styling */
+.navbtn {
+    color: #707070;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+    color: #000;
+}
+
+/* Login/Signup Styling */
+.login-signup {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.drop-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Divider line */
+}
+
+.drop-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.drop-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.drop-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Stays above the content */
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background: #707070;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    display: flex; /* Show when active */
+}
+
+/* Mobile Menu Links */
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Divider line between entries */
+    padding-bottom: 10px;
+}
+
+.menu-links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Doctor/Patients Login-Signup Row */
+.drop-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Divider line */
+}
+
+.drop-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.drop-links {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.drop-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-option {
+        display: none; /* Hide desktop navigation */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-links a {
+        font-size: 20px; /* Increased font size for mobile */
+    }
+
+    .drop-section {
+        font-size: 18px; /* Increase font size in dropdown sections */
+    }
+
+    .drop-links a {
+        font-size: 16px; /* Adjust login/signup font size */
+    }
+}
+
+
+.mobbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width : 100vw;
+
+} 
