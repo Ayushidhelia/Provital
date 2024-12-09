@@ -1,0 +1,6 @@
+body {
+    font-feature-settings: 'liga' off, 'clig' off;
+    -webkit-font-feature-settings: 'liga' off, 'clig' off; /* For WebKit browsers */
+    -moz-font-feature-settings: 'liga' off, 'clig' off; /* For Mozilla browsers */
+    -ms-font-feature-settings: 'liga' off, 'clig' off; /* For older browsers */
+}
