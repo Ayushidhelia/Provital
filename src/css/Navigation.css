@@ -9,7 +9,7 @@
     padding: 0 60px;
     box-sizing: border-box;
     color: #707070;
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000; 
 }
 
 /* Logo Styling */
