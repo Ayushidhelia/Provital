@@ -42,6 +42,11 @@
   margin-top: -8px;
 }
 
+media (max-width: 768px) {
+  .sub {
+    margin-top: -8px; 
+  }
+  
 .top-left-image {
   overflow: hidden;
   padding: 60px 0;
