@@ -39,14 +39,8 @@
   font-style: normal;
   font-weight: 400; /* Corrected font weight */
   line-height: 32px; /* 177.778% */
-  margin-top: -8px;
 }
-
-media (max-width: 768px) {
-  .sub {
-    margin-top: -8px; 
-  }
-  
+ 
 .top-left-image {
   overflow: hidden;
   padding: 60px 0;
