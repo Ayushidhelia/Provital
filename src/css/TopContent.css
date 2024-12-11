@@ -27,6 +27,7 @@
 .colot {
   background: linear-gradient(272deg, #4683d0 17.7%, #7cd0a2 145.75%);
   -webkit-background-clip: text;
+  background-clip: text; /* Add this for compatibility */
   -webkit-text-fill-color: transparent;
   color: transparent; /* Fallback for browsers that do not support -webkit-text-fill-color */
   border: none;
@@ -39,8 +40,9 @@
   font-style: normal;
   font-weight: 400; /* Corrected font weight */
   line-height: 32px; /* 177.778% */
+  margin-top: -10px; 
 }
- 
+
 .top-left-image {
   overflow: hidden;
   padding: 60px 0;
@@ -204,7 +206,7 @@
 }
 
 .top-middle-image:after {
-  middle: 0;
+  right: 0;
   background: linear-gradient(to middle, rgba(255, 255, 255, 0), whitesmoke);
 }
 
