@@ -39,6 +39,7 @@
   font-style: normal;
   font-weight: 400; /* Corrected font weight */
   line-height: 32px; /* 177.778% */
+  margin-top: -8px;
 }
 
 .top-left-image {
